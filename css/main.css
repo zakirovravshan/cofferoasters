@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src:
+         url('../fonts/roboto-v30-latin_cyrillic-regular.woff2') format('woff2'),
+         url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src:
+         url('../fonts/roboto-v30-latin-500.woff2') format('woff2'),
+         url('../fonts/roboto-v30-latin-500.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src:
+         url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+         url('../fonts/roboto-v30-latin-700.woff') format('woff');
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+
+
+}
+
+
+image {
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.mainbody {
+    height: 797px;
+    background-color: #F3D7B7;
+    background-image: url("../images/first-section/circle.png"), url("../images/first-section/cofeeimg.jpg"), url("../images/first-section/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 160px 160px, 710px 696px, 100%;
+    background-position: calc(50% + 55px), calc(50% + 413px), 100%;
+    background-position-y: calc(8%), calc(100px), 0;
+}
+
+.container {
+    width: 1380px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin: 40px 0;
+    list-style-type: none;
+    align-items: center;
+}
+
+.navbar-item {
+
+    margin: 0;
+    padding: 0;
+    margin-left: 40px;
+
+}
+
+.navbar-link {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #333333;
+    text-decoration: none;
+}
+
+
+.content {
+    width: 434px;
+    margin-top: 120px;
+    margin-left: 130px;
+
+}
+
+.content-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.content-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 34px;
+}
+
+.conetnt-link {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #0A775F;
+    border-radius: 100px;
+    padding: 16px 24px;
+}
+
+.products {
+
+    position: relative;
+    display: block;
+    
+    padding: 20px;
+    
+}
+.products::before{
+    position: absolute;
+    top: 50px;
+    left: -100px;
+    display: block;
+    background-image: url("../images/second-section/Vector.png"); , 
+    background-repeat: no-repeat;
+    background-size: 400px 300px;
+    width: 400px;
+    height: 300px;
+    content: "";
+}
+
+.products::after{
+    position: absolute;
+    top: 800px;
+    right: -200px;
+    display: block;
+    background-image: url("../images/second-section/Fill-1.png"); , 
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 392px;
+    height: 477px;
+    content: "";
+}
+
+.products-box {
+    padding: 50px;
+    background-image: url("../images/second-section/background-product.png");
+
+}
+
+.products_title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    font-variant: small-caps;
+    color: #000000;
+    margin-bottom: 80px;
+}
+
+.productbox {
+    margin: auto;
+    width: 1114px;
+   background-position: calc();
+
+}
+.products-box::before{
+    position: absolute;
+    top: 1400px;
+    left: -250px;
+    display: block;
+    background-image: url("../images/second-section/Vector\ \(1\).png"); , 
+    background-repeat: no-repeat;
+    background-size: 400px 300px;
+    width: 400px;
+    height: 300px;
+    content: "";
+}
+
+.product-list {
+    list-style-type: none;
+
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    
+}
+.product-item:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.product-item-content {
+    margin-left: 117px;
+    width: 453px;
+}
+
+.product-content-title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    font-variant: small-caps;
+    color: #333333;
+}
+
+.product-content-text {
+    
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    color: #333333;
+}
