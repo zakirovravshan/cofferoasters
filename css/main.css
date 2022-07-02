@@ -3,8 +3,8 @@
     font-style: normal;
     font-weight: 400;
     src:
-         url('../fonts/roboto-v30-latin_cyrillic-regular.woff2') format('woff2'),
-         url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+        url('../fonts/roboto-v30-latin_cyrillic-regular.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin-regular.woff') format('woff');
 }
 
 @font-face {
@@ -12,8 +12,8 @@
     font-style: normal;
     font-weight: 500;
     src:
-         url('../fonts/roboto-v30-latin-500.woff2') format('woff2'),
-         url('../fonts/roboto-v30-latin-500.woff') format('woff');
+        url('../fonts/roboto-v30-latin-500.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin-500.woff') format('woff');
 }
 
 @font-face {
@@ -21,8 +21,8 @@
     font-style: normal;
     font-weight: 700;
     src:
-         url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
-         url('../fonts/roboto-v30-latin-700.woff') format('woff');
+        url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin-700.woff') format('woff');
 }
 
 
@@ -142,16 +142,18 @@ image {
 
     position: relative;
     display: block;
-    
+
     padding: 20px;
-    
+
 }
-.products::before{
+
+.products::before {
     position: absolute;
     top: 50px;
     left: -100px;
     display: block;
-    background-image: url("../images/second-section/Vector.png"); , 
+    background-image: url("../images/second-section/Vector.png");
+    ,
     background-repeat: no-repeat;
     background-size: 400px 300px;
     width: 400px;
@@ -159,12 +161,13 @@ image {
     content: "";
 }
 
-.products::after{
+.products::after {
     position: absolute;
     top: 800px;
     right: -200px;
     display: block;
-    background-image: url("../images/second-section/Fill-1.png"); , 
+    background-image: url("../images/second-section/Fill-1.png");
+    ,
     background-repeat: no-repeat;
     background-size: cover;
     width: 392px;
@@ -191,15 +194,17 @@ image {
 .productbox {
     margin: auto;
     width: 1114px;
-   background-position: calc();
+    background-position: calc();
 
 }
-.products-box::before{
+
+.products-box::before {
     position: absolute;
     top: 1400px;
     left: -250px;
     display: block;
-    background-image: url("../images/second-section/Vector\ \(1\).png"); , 
+    background-image: url("../images/second-section/Vector\ \(1\).png");
+    ,
     background-repeat: no-repeat;
     background-size: 400px 300px;
     width: 400px;
@@ -215,9 +220,10 @@ image {
 .product-item {
     display: flex;
     align-items: center;
-    
+
 }
-.product-item:nth-child(even){
+
+.product-item:nth-child(even) {
     flex-direction: row-reverse;
 }
 
@@ -236,9 +242,78 @@ image {
 }
 
 .product-content-text {
-    
+
     font-weight: 400;
     font-size: 22px;
     line-height: 34px;
     color: #333333;
+}
+
+/* ----------------------------------------------------------ABOUT--------------------------------- */
+
+.about-section {
+    width: 1440px;
+    padding: 0 20px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.about {
+    width: 1400px;
+    border: 1px solid red;
+    margin: 0 auto;
+    
+    background-image: url("../images/aboutbg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0 30px;
+}
+
+.about-title {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    font-variant: small-caps;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.about-text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin-bottom: 80px;
+}
+.about-list{
+    display: flex;
+    list-style-type: none;
+
+}
+.about-item:nth-child(2){
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.about-img {
+    margin-bottom: 28px;
+}
+
+.about-item-title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    font-variant: small-caps;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.about-item-text{
+margin-bottom: 80px;
 }
